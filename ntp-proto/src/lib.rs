@@ -9,7 +9,7 @@
 #![cfg_attr(not(feature = "__internal-api"), allow(unused))]
 
 mod algorithm;
-mod clock;
+pub mod clock;
 mod config;
 mod cookiestash;
 mod identifiers;
@@ -17,7 +17,7 @@ mod io;
 mod ipfilter;
 mod keyset;
 mod nts;
-mod packet;
+pub mod packet;
 mod server;
 mod source;
 mod system;
