@@ -8,20 +8,20 @@
 #![forbid(unsafe_code)]
 #![cfg_attr(not(feature = "__internal-api"), allow(unused))]
 
-mod algorithm;
+pub mod algorithm;
 pub mod clock;
-mod config;
-mod cookiestash;
-mod identifiers;
-mod io;
-mod ipfilter;
-mod keyset;
-mod nts;
+pub mod config;
+pub mod cookiestash;
+pub mod identifiers;
+pub mod io;
+pub mod ipfilter;
+pub mod keyset;
+pub mod nts;
 pub mod packet;
-mod server;
-mod source;
-mod system;
-mod time_types;
+pub mod server;
+pub mod source;
+pub mod system;
+pub mod time_types;
 
 pub mod tls_utils;
 
